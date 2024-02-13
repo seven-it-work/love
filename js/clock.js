@@ -90,7 +90,9 @@ if (localStorageWeather && localStorageWeather.length >= 4) {
                 renderClock(wttrInfo);
             }
         }
-    )
+    ).catch(()=>{
+        renderClock(undefined);
+    })
 }
 
 
@@ -101,11 +103,16 @@ if (localStorageWeather && localStorageWeather.length >= 4) {
 function renderClock(data) {
     if (document.getElementById('hexo_electric_clock')) {
         var clock_box = document.getElementById('hexo_electric_clock');
+        let cardClockWeather=''
+        if (data){
+            cardClockWeather=`
+            <span class="card-clock-weather">${data[1]} ${data[2]}</span>
+            <span class="card-clock-humidity">💧 ${data[3]}</span>`
+        }
         clock_box_html = `
           <div class="clock-row">
             <span class="card-clock-ip">${realIp}</span>
-            <span class="card-clock-weather">${data[1]} ${data[2]}</span>
-            <span class="card-clock-humidity">💧 ${data[3]}</span>
+            ${cardClockWeather}
           </div>
           <div class="clock-row">
             <span id="card-clock-time" class="card-clock-time"></span>
