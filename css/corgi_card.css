@@ -1,0 +1,249 @@
+.corgi_card {
+  background: #f5e3e0;
+}
+.corgi_card .clover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.corgi_card .corgi {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+.corgi_card .head {
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 100px;
+}
+.corgi_card .head:after {
+  position: absolute;
+  top: 80px;
+  left: -100px;
+  content: "";
+  border: 100px solid transparent;
+  border-top: 80px solid #ee9837;
+}
+.corgi_card .head .forehead {
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  height: 100px;
+  width: 120px;
+  background: #ee9837;
+  border-radius: 40%;
+}
+.corgi_card .snout {
+  position: relative;
+  z-index: 2;
+  top: 60px;
+  left: -40px;
+}
+.corgi_card .snout:before, .corgi_card .snout:after {
+  background: #fff;
+  position: absolute;
+  content: "";
+  top: 10px;
+  width: 50px;
+  height: 80px;
+  border-top: 1px solid #ddd;
+  border-radius: 60px 60px 0 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.corgi_card .snout:after {
+  left: 30px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.corgi_card .bridge {
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-bottom: 40px solid #ee9837;
+  border-bottom-color: #fff;
+}
+.corgi_card .booper {
+  background: black;
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: 20px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50px 50px 70px 70px;
+}
+.corgi_card .eyes {
+  position: absolute;
+  top: 60px;
+}
+.corgi_card .eyes .left {
+  position: absolute;
+  background: black;
+  margin: auto;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  left: 25px;
+}
+.corgi_card .eyes .right {
+  position: absolute;
+  background: black;
+  margin: auto;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  right: 25px;
+}
+.corgi_card .ears {
+}
+.corgi_card .ears .left {
+  background-color: #ee9837;
+  position: absolute;
+  left: -40px;
+  top: 35px;
+  transform: rotate(45deg) skewX(40deg) scale(1, 0.866);
+}
+.corgi_card .ears .right {
+  background-color: #ee9837;
+  position: absolute;
+  right: -40px;
+  top: 35px;
+  transform: rotate(-45deg) skewX(-40deg) scale(1, 0.866);
+}
+.corgi_card .ears .right, .corgi_card .ears .right:before, .corgi_card .ears .right:after, .corgi_card .ears .left, .corgi_card .ears .left:before, .corgi_card .ears .left:after {
+  width: 7em;
+  height: 6em;
+}
+.corgi_card .ears .right, .corgi_card .ears .right:before, .corgi_card .ears .right:after {
+  border-radius: 20% 20% 40% 20%;
+}
+.corgi_card .ears .left, .corgi_card .ears .left:before, .corgi_card .ears .left:after {
+  border-radius: 20% 20% 20% 40%;
+}
+.corgi_card .tongue {
+  background: #e8b4bc;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 15px;
+  width: 30px;
+  height: 40px;
+  border-radius: 0 0 40% 40%;
+  -webkit-animation: happydoggo 0.5s infinite;
+  animation: happydoggo 0.5s infinite;
+}
+@keyframes happydoggo {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+@-webkit-keyframes happydoggo {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+.corgi_card .mouth {
+  background: #fff;
+  position: relative;
+  width: 62px;
+  height: 62px;
+  top: 100px;
+  bottom: 0;
+  left: -31px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.corgi_card .magnificent-floof {
+  position: absolute;
+  top: 146px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 160px solid #fff;
+  border-radius: 0 0 0 50px;
+}
+.corgi_card .magnificent-floof .left {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid #fff;
+  top: -140px;
+  left: -100px;
+}
+.corgi_card .magnificent-floof .left:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid #fff;
+  top: 15px;
+  left: -10px;
+}
+.corgi_card .magnificent-floof .left:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid #fff;
+  top: 38px;
+  left: -2px;
+}
+.corgi_card .magnificent-floof .right {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid #fff;
+  top: -140px;
+  right: -100px;
+}
+.corgi_card .magnificent-floof .right:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid #fff;
+  top: 15px;
+  right: -10px;
+}
+.corgi_card .magnificent-floof .right:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid #fff;
+  top: 38px;
+  right: -2px;
+}
